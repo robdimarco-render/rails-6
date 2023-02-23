@@ -13,7 +13,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: myrailssite
-          property: "postgres://rob_pgsql_user:9XOE3IxDLlwPOQJn1Knh2y1YLKNIHXCB@dpg-cfro1qhgp3jo1ds1c1i0-a/rob_pgsql"
+          name: rob-pgsql
+          property: connectionString
       - key: SECRET_KEY_BASE
         generateValue: true
